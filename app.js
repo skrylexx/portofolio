@@ -1,0 +1,44 @@
+const textDisplay = document.getElementById('animate');
+const phrases = ['Étudiant en deuxième année à l\'EPSI.', 'Passionné d\'informatique !', 'Suivi de formations sur TryHackMe.', 'Développeur web front et back end.']
+
+let i = 0
+let j = 0
+let currentPhrase = []
+let isDeleting = false
+
+function writter(){
+    textDisplay.innerHTML = currentPhrase.join('')
+
+    if(i < phrases.length){
+
+        if(!isDeleting && j <= phrases[i].length){
+            currentPhrase.push(phrases[i][j])
+            j++
+        }
+
+        if(isDeleting && j <= phrases[i].length){
+            currentPhrase.pop(phrases[i][j])
+            j--
+        }
+
+        if(j === phrases[i].length){
+            isDeleting = true
+            isEnd = true
+        }
+
+        if(isDeleting && j === 0){
+            currentPhrase = []
+            isDeleting = false
+            i++
+            if(i == phrases.length){
+                i = 0
+            }
+        }
+    }
+    const speedUp = Math.random() * (80 -50) + 50
+    const normalSpeed = Math.random() * (300 -200) + 200
+    const deleteTime = isDeleting ? speedUp : normalSpeed
+    setTimeout(writter, deleteTime)
+}
+
+writter()
