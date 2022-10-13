@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById('animate');
-const phrases = ['Étudiant en deuxième année à l\'EPSI.', 'Passionné d\'informatique !', 'Suivi de formations sur TryHackMe.', 'Développeur web front et back end.']
+const phrases = ['Étudiant en deuxième année à l\'EPSI.', 'Passionné d\'informatique !', 'Suivi de formations sur TryHackMe.', 'Développement web front et back end.']
 
 let i = 0
 let j = 0
@@ -14,16 +14,20 @@ function writter(){
         if(!isDeleting && j <= phrases[i].length){
             currentPhrase.push(phrases[i][j])
             j++
+            textDisplay.innerHTML = currentPhrase.join('')
         }
 
         if(isDeleting && j <= phrases[i].length){
             currentPhrase.pop(phrases[i][j])
             j--
+            textDisplay.innerHTML = currentPhrase.join('')
+            setTimeout(500)
         }
 
         if(j === phrases[i].length){
             isDeleting = true
             isEnd = true
+            setTimeout(500)
         }
 
         if(isDeleting && j === 0){
