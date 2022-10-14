@@ -4,6 +4,8 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header{
@@ -63,4 +65,57 @@ h1{
     color: #e0e0e0;
     font-family: 'Silkscreen', cursive;
     font-size: 2.5em;
+}
+
+.articles{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 35vh;
+    margin-top: 5%;
+    /*display: flex;
+    justify-content: center;*/
+    overflow-y: hidden;
+}
+
+.carte{
+    border: 1px solid green;
+    border-radius: 40px;
+    color: #e0e0e0;
+    height: 30vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #111111;
+}
+
+.slick-list{
+    height: 30vh;
+}
+
+.slick-dots{
+    background: #e0e0e0;
+}
+
+.slick-track{
+    height: 30vh;
+    width: 100%;
+}
+
+.carte>aside{
+    height: 20vh;
+    width: 10vw;
+}
+
+.carte>.centre{
+    border: 1px solid yellow;
+    width: 70%;
+    height: 80%;
+    display: block;
+}
+
+.articles>article>aside>img{
+    height: 100%;
+    width: 100%;
 }
