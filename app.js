@@ -55,33 +55,18 @@ writter()
 
 
 
-///////////////////////
-//SCRIPT CARROUSSEL///
-/////////////////////
+///////////////////////////
+//SCRIPT SEMI-CAROUSSEL///
+/////////////////////////
 
-$(document).on('ready', function () {
-  $(".articles").slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  })});
+//let titreCarte = document.getElementById('titreCarte');
+//let textCarte = document.getElementById('textCarte');
+
+//Expériences :
+let titres = ["Aquirespi", "TryHackMe", "EPSI", "A propos de moi"];
+let descriptions = ["Stage d'une durée de deux mois. Mission principale : Développement d'un site web", "Learning paths terminées, certifications obtenues ...", "Choix d'orientation, dates de stage ou d'alternance, suivi des cours dispensés...", "Coordonnées, CV téléchargeable, avis..."];
+
+function changeText(value) {
+  document.getElementById('titreCarte').innerHTML = titres[value];
+  document.getElementById('textCarte').innerHTML = descriptions[value];
+}

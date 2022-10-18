@@ -16,11 +16,26 @@ header{
     justify-content: space-between;
 }
 
+.my{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5vh;
+    width: 25vw;
+}
+
+.photo>img{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
 .np{
     color: #e0e0e0;
     font-family: "Source Code Pro", monospace;
     font-size: 2em;
-    margin-left: 50px;
 }
 
 .name{
@@ -72,45 +87,69 @@ h1{
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
-    width: 90%;
+    width: 70%;
     height: 35vh;
     margin-top: 5%;
-    display: flex;
+    display: block;
     justify-content: center;
-    overflow-y: hidden;
 }
 
 .carte{
-    border: 1px solid green;
     border-radius: 40px;
     color: #e0e0e0;
-    height: 30vh;
+    height: 25vh;
     width: 40%;
+    display: block;
+    background-color: #313131;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+}
+
+#titreCarte{
+    height: 8vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: #111111;
-}
-
-.slick-list{
-    height: 30vh;
-    width: 40%;
-}
-
-.slick-dots{
-    background: #e0e0e0;
-}
-
-.slick-track{
-    height: 30vh;
-    width: 100%;
-    display: flex;
     justify-content: center;
 }
 
-.carte>.centre{
-    border: 1px solid yellow;
-    width: 70%;
-    height: 80%;
-    display: block;
+#textCarte{
+    height: 13vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+
+.boutons{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button{
+    border: none;
+    border-radius: 60%;
+    height: 4.5vh;
+    background-color: #1b1b1b;
+    width: 2.2vw;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #e0e0e0;
+    opacity: 0.4;
+    overflow: hidden;
+}
+
+button:hover{
+    opacity: 0.9;
+    transition: 1s;
+    background-color: #e0e0e0;
+    color: #1B1B1B
 }
