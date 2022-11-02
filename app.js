@@ -59,8 +59,8 @@ writter()
 //SCRIPT SEMI-CAROUSSEL///
 /////////////////////////
 
-let titres = ["Aquirespi", "TryHackMe", "EPSI", "A propos de moi"];
-let descriptions = ["Stage d'une durée de deux mois. Mission principale : Développement d'un site web", "Learning paths terminées, certifications obtenues ...", "Choix d'orientation, dates de stage ou d'alternance, suivi des cours dispensés...", "Coordonnées, CV téléchargeable, avis..."];
+let titres = ["Aquirespi", "TryHackMe", "EPSI","New CyberHospital", "A propos de moi"];
+let descriptions = ["Stage d'une durée de deux mois. Mission principale : Développement d'un site web.", "Projet ouvert au sein de l'EPSI où nous avons décidé de créer un PCB capable d'analyser un réseau automatiquement.", "Learning paths terminées, certifications obtenues ...", "Choix d'orientation, dates de stage ou d'alternance, suivi des cours dispensés...", "Coordonnées, CV téléchargeable, avis..."];
 
 function changeText(value) {
   document.getElementById('titreCarte').innerHTML = titres[value];
