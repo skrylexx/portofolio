@@ -199,9 +199,8 @@ button:focus{
     color: #e0e0e0;
 }
 
-button:active{
-    background-color: #1B1B1B;
-    color: #e0e0e0;
+button.active{
+    opacity: 1;
 }
 
 #more{
