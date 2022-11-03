@@ -1,6 +1,6 @@
-///////////////////////////
-//SCRIPT AUTO WRITTER/////
-/////////////////////////
+/////////////////////////////////
+//SCRIPT AUTO WRITTER INDEX/////
+///////////////////////////////
 
 const textDisplay = document.getElementById('animate');
 const phrases = ['Étudiant en deuxième année à l\'EPSI.', 'Passionné d\'informatique !', 'Suivi de formations sur TryHackMe.', 'Développement web front et back end.']
@@ -12,29 +12,24 @@ let isDeleting = false
 
 
 function writter(){
-    textDisplay.innerHTML = currentPhrase.join('')
-
+    textDisplay.innerHTML = currentPhrase.join('');
     if(i < phrases.length){
-
         if(!isDeleting && j <= phrases[i].length){
             currentPhrase.push(phrases[i][j])
             j++
             textDisplay.innerHTML = currentPhrase.join('')
         }
-
         if(isDeleting && j <= phrases[i].length){
             currentPhrase.pop(phrases[i][j])
             j--
             textDisplay.innerHTML = currentPhrase.join('')
             setTimeout(500)
         }
-
         if(j === phrases[i].length){
             isDeleting = true
             isEnd = true
             setTimeout(500)
         }
-
         if(isDeleting && j === 0){
             currentPhrase = []
             isDeleting = false
@@ -49,10 +44,7 @@ function writter(){
     const deleteTime = isDeleting ? speedUp : normalSpeed
     setTimeout(writter, deleteTime)
 }
-
 writter()
-
-
 
 
 ///////////////////////////
