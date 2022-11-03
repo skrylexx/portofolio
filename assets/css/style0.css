@@ -126,4 +126,40 @@ body{
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,1), 0 1px 2px rgba(0,0,0,1);
+}
+
+.text>p{
+    color: #e0e0e0;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.2em;
+}
+
+.textSection{
+    margin-top: 3%;
+    width: 100%;
+    height: 80vh;
+    display: block;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}
+
+.text{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.db{
+    width: 80%;
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30vh;
+}
+
+.imgDb{
+    height: 50px;
+    width: 50px;
 }
