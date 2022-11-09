@@ -52,7 +52,7 @@ writter()
 /////////////////////////
 
 let titres = ["AQUIRESPI", "TryHackMe", "EPSI","New CyberHospital", "A propos de moi"];
-let descriptions = ["Stage d'une durée de deux mois. Mission principale : Développement d'un site web.", "Learning paths terminées, certifications obtenues ...","Choix d'orientation, dates de stage ou d'alternance, suivi des cours dispensés..." ,"Projet ouvert au sein de l'EPSI où nous avons décidé de créer un PCB capable d'analyser un réseau automatiquement.", "Coordonnées, CV téléchargeable, documents supplémentaires..."];
+let descriptions = ["Stage de développement full stack.", "Learning paths terminées, certifications obtenues ...","Choix d'orientation, dates de stage ou d'alternance, suivi des cours dispensés..." ,"Projet ouvert au sein de l'EPSI où nous avons décidé de créer un PCB capable d'analyser un réseau automatiquement.", "Coordonnées, CV téléchargeable, documents supplémentaires..."];
 
 function changeText(value) {
   document.getElementById('titreCarte').innerHTML = titres[value];
