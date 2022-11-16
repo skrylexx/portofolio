@@ -116,7 +116,7 @@ main{
 }
 
 .vidSection{
-    padding-top: 3%;
+    padding-top: 5%;
     width: 100%;
     display: block;
     justify-content: center;
@@ -181,7 +181,7 @@ main{
     grid-gap: 2px;
     height: 60vh;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 .titleGrid{
@@ -195,30 +195,37 @@ main{
     height: 100%;
     width:100%;
     background-color: #1B1B1B;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .topRight{
     height: 100%;
     width:100%;
     background-color: #1B1B1B;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .botLeft{
     height: 100%;
     width:100%;
     background-color: #1B1B1B;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .botRight{
     height: 100%;
     width:100%;
     background-color: #1B1B1B;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .details>div{
     padding-top: 10%;
     padding-left: 10%;
-    border-radius: 10px;
 }
 
 .details>div>p{

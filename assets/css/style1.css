@@ -9,23 +9,25 @@
 }
 
 header{
+    height: 18vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #1B1B1B;
 }
 
 .my{
     display: flex;
     align-items: center;
-    margin-left: 3vw;
-    height: 12vh;
+    margin-left: 2vw;
+    height: 10vh;
     width: 25vw;
 }
 
 .photo>img{
-    height: 80px;
-    width: 80px;
+    height: 75px;
+    width: 75px;
     border-radius: 40px;
     margin-right: 20px;
 }
@@ -45,7 +47,7 @@ header{
 .np{
     color: #e0e0e0;
     font-family: "Source Code Pro", monospace;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .name{
@@ -53,7 +55,7 @@ header{
 }
 
 .reseaux{
-    height: 25vh;
+    height: 23vh;
     width: 30vw;
     display: flex;
     align-items: center;
@@ -99,52 +101,133 @@ ul>li>a>img:hover{
 }
 
 body{
-    background-color: #1B1B1B;
+    background-color: #1d1d1d;
 }
 
-.topSection{
-    width: 100%;
-    height: 60vh;
+main{
+    background-image: url('../img/360_F_421444029_AZSu1FbsZ2Nmn4SBu8NgoNMYkyWBTlLU.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 7%;
+}
+
+.sectionLogos{
+    margin-right: auto;
+    margin-left: auto;
+    height: 70vh;
+    width: 80vw;
     display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 4%;
+    text-align: center;
+    margin-bottom: 3%;
 }
 
-.banner{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.banner>img{
-    width: 80%;
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-}
-
-.intro{
-    margin-top: 2%;
-    width: 100%;
-    height: 25vh;
-    font-family: "Source Code Pro", monospace;
+.sectionLogos>#animation{
     color: #e0e0e0;
+    font-family: 'Silkscreen', cursive;
+    font-size: 2.2em;
+    margin-bottom: 3%;
+}
+
+.wrapper{
+    height: 50vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e0e0e0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2,50%);
+    grid-gap: 2px;
+    border-radius: 14px;
+}
+
+.logo{
+    background-color: #1d1d1d;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contenu{
+.logo>img{
+    height: 90%;
+}
+
+.topleft{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.topright{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.topright>img{
+    height: 200%;
+}
+
+.botleft{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.botright{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.parcours{
+    background-color: #1d1d1d;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+.parcours>div{
     width: 50%;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parcours>div>.text{
+    color: #e0e0e0;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
     height: 100%;
-    /*text-align: center;*/
+    width: 90%;
+    text-align: center;
+}
+
+.parcours>div>.text>a{
+    color: #e0e0e0;
+}
+
+.parcours>div>.text>a:visited{
+    color: #e0e0e0;
+}
+
+h3{
+    font-size: 1.3em;
+    text-decoration: underline;
 }
 
 hr{
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 70%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.658);
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
