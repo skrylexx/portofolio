@@ -12,7 +12,7 @@ let isDeleting = false
 
 
 function writter(){
-    textDisplay.innerHTML = currentPhrase.join('');
+    textDisplay.innerHTML = currentPhrase.join('>');
     if(i < phrases.length){
         if(!isDeleting && j <= phrases[i].length){
             currentPhrase.push(phrases[i][j])
